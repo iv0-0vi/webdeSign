@@ -72,7 +72,7 @@
 
         <div class="line2">
         <p> 
-            Email: <a href="mailto:125390933@umail.ucc.ie">125390933@umail.ucc.ie</a>
+            Email: <a href="mailto:name@email.com">name@email.com</a>
              |
             Phone: +21 (XX) XXXX XXX
             <br>

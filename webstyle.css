@@ -1,0 +1,283 @@
+.header {
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    border: 0px ;
+    background-color: white;
+}
+
+.list {
+    text-align: left;
+}
+
+/* Navigate to other pages */
+.option:hover {
+    background-color: #004aad;
+    color: #ffffff;
+}
+.option {
+    font-size: large;
+    font-weight: bold;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family:  'Arial Narrow',  sans-serif;
+  
+}
+
+p {
+    text-align: center;
+    font-family:'Arial Narrow';
+}
+
+.gif {
+    image-rendering: crisp-edges;
+   
+    display: block;
+    margin: auto;
+    width: 50%;
+
+}
+
+.square {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    background-color: #5db8e6;
+    height: 300px;
+    width: 300px;
+    border: 4px solid #004aad;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.box:hover{
+    background-color: #004aad;
+    color: #ffffff;
+    
+}
+
+/*Underlined text */
+u {
+    color: #004aad;
+}
+
+footer {
+   margin-block-end: auto;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.pictureWeb {
+    display: flex;
+}
+
+.webpage {
+    width: 45%;
+    flex: 1;
+    margin: 1px;
+    border: 1px solid #004aad;
+    display: block;
+    margin: auto;
+    
+
+}
+.work {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.form {
+    background-color: #5db8e6;
+    border: 4px solid #004aad;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.service {
+    width: 150px;
+}
+
+.redText {
+    color: red;
+}
+
+.faq {
+    background-color: #5db8e6;
+    width: 100%;
+    border-radius: 50px;
+    height: 50px;
+
+}
+
+.faq:hover {
+    background-color: #004aad;
+    color: #ffffff;
+}
+
+.footerContainer {
+    display: flex;
+    align-items: center;   /* vertical alignment */
+    justify-content: center; /* centers the whole block in footer */
+}
+
+.line1 {
+    height: auto;          /* logo size */
+    display: block;
+    left: 10px;
+}
+
+.line2 {
+    margin-left: 20px;
+    text-align: center;    /* centers the text inside */
+}
+
+.inTouch {
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+/* === RESPONSIVE DESIGN === */
+
+@media (max-width: 1024px) {
+  /* TABLET adjustments (iPads, larger mobiles, etc.) */
+  
+  .square {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+  }
+
+  .box {
+    width: 100%;
+    height: 280px;
+    max-width: none;
+  }
+
+  .pictureWeb {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .webpage {
+    width: 90%;
+    margin: 15px auto;
+  }
+
+  .gif,
+  .image {
+    width: 85%;
+  }
+
+  .work {
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* MOBILE PHONE adjustments (small screens) */
+  
+  .square {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    min-height: 260px;
+    margin: 0 auto;
+    border-radius: 35px;
+  }
+
+  .gif,
+  .image {
+    width: 95%;
+  }
+
+  .pictureWeb {
+    flex-direction: column;
+  }
+
+  .webpage {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .work {
+    height: 160px;
+  }
+
+  .service {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .line1 {
+    left: auto;
+    margin: 0 auto 10px;
+  }
+
+  .line2 {
+    margin-left: 0;
+  }
+
+  .faq {
+    height: auto;
+    padding: 15px 20px;
+    line-height: 1.4;
+  }
+
+  h1, h2 {
+    font-size: 1.9rem;
+  }
+
+  .option {
+    font-size: 1.1rem;
+  }
+}
+
+/* Extra small phones ( extra safety) */
+@media (max-width: 400px) {
+  .box {
+    min-height: 240px;
+  }
+  
+  .gif,
+  .image {
+    width: 98%;
+  }
+}

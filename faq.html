@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--For screen reponsive designs-->
+    <title>webdeSign - FAQ</title>
+    <link rel="stylesheet" href="webstyle.css">
+</head>
+<body>
+    <div class="header">
+        <a href="home.html"><button class="home"><img src="Untitled design-2.png"></button></a>
+        <a href="about.html"><button class="option">About</button></a>
+        <a href="services.html"><button class="option">Service</button></a>
+        <a href="faq.html"><button class="option">FAQ</button></a>
+        <a href="contact.php"><button class="option">Contact</button></a>
+    </div>
+    
+    <br>
+
+    <h1>FAQ</h1>
+
+    <button class="faq" onclick="question1()">What types of websites do you design? </button>
+    <p id="answer1"></p>
+
+    <button class="faq" onclick="question2()"> How long does it typically take to complete a website project? </button>
+    <p id="answer2"></p>
+    
+    <button class="faq" onclick="question3()"> What forms of payment do you accept? </button>
+    <p id="answer3"></p>
+
+    <button class="faq" onclick="question4()"> Will my website be mobile-friendly and responsive?</button>
+    <p id="answer4"></p>
+
+    <button class="faq" onclick="question5()"> Will you train me on how to use and update my website?</button>
+    <p id="answer5"></p>
+   
+    <script>
+        // when the button is clicked the function below is run in the <p> tags with the same id. The text is added on below the button.
+        function question1(){
+            document.getElementById('answer1').innerHTML="We design anything from  business websites to e-commerce, portfolios and even personal projects such as CVs.";
+        }
+
+        function question2(){
+            document.getElementById('answer2').innerHTML="It all depends on the size of the project. <br> Typically, a project takes a business week to be completed, including planning, designing, content collection, prototyping, developing, backend setup testing and revising.<br> At all stages, we require your collaboration to ensure the processes is as efficient as possible.  ";
+        }
+
+        function question3(){
+            document.getElementById('answer3').innerHTML="We accept all forms of cashless transfers. <br> Our main payment method is through Stripe.";
+        }
+
+        function question4(){
+            document.getElementById('answer4').innerHTML="With webdeSign, that's a guarantee. All our websites are always mobile-friendly and responsive unless asked otherwise. ";
+        }
+
+        function question5(){
+            document.getElementById('answer5').innerHTML="Once we have completed your website's design, we always go through the website with you before launching, to ensure that your vision has been met. <br> If you want to train a team on the use of your website, check out our offers <a href='services.html'>here</a>.";
+        }
+
+    </script>
+
+</body>
+<footer>
+    <hr>
+
+    <div class="footerContainer">
+        <a href="home.html" class="line1"><img src="Untitled design-2.png"></a>
+
+        <div class="line2">
+        <p> 
+            Email: <a href="mailto:125390933@umail.ucc.ie">125390933@umail.ucc.ie</a>
+             |
+            Phone: +21 (XX) XXXX XXX
+            <br>
+            <br>
+            &copy; 2026 webdeSign. All rights reserved.
+        </p>
+        </div>
+    </div>
+</footer>
+</html>
